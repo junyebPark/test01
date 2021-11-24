@@ -7,11 +7,11 @@
 	<id property="memberId" column="MEMBER_ID"/>
 	<result property="memberPwd" column="MEMBER_PWD"/>
 	<result property="memberNm" column="MEMBER_NM"/>
-	<result property="memberEnrollDt" column="memberEnrollDt"/>
+	<result property="memberEnrollDt" column="MEMBER_ENROLL_DT"/>
 	
 	</resultMap>
 
-	<insert id="signUp" parameterType="string">
+	<insert id="signUp" parameterType="Member">
 		insert into member values(#{memberId}, #{memberPwd}, #{memberNm}, sysdate)
 	</insert>
 </mapper>

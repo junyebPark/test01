@@ -4,14 +4,15 @@
 
 <configuration>
 
-<settings>
-	<setting name="jdbcTypeForNull" value="NULL"/>
+	<settings>
+		<setting name="jdbcTypeForNull" value="NULL" />
 
-</settings>
-<typeAliases>
-	<typeAlias type="com.mycompany.myapp01.model.vo.Member" alias="Member"/>
-</typeAliases>
-<mappers>
-	<mapper resource="mappers/member-mapper.xml"></mapper>
-</mappers>
+	</settings>
+	<typeAliases>
+		<typeAlias type="com.mycompany.myapp01.model.vo.Member"
+			alias="Member" />
+	</typeAliases>
+	<mappers>
+		<mapper resource="mappers/member-mapper.xml"></mapper>
+	</mappers>
 </configuration>

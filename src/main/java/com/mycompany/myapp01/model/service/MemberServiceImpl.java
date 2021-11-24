@@ -11,10 +11,11 @@ public class MemberServiceImpl implements MemberService{
 	@Autowired
 	private MemberDao mDao;
 	
-	public int insertMember(Member vo) {
+	@Override
+	public int signUp(Member vo) {
 		int result=0;
 	      try {
-	         result = mDao.insertMember(vo);
+	         result = mDao.signUp(vo);
 	         System.out.println(result);
 	      } catch (Exception e) {
 	         e.printStackTrace();

@@ -2,8 +2,11 @@ package com.mycompany.myapp01.model.vo;
 
 import java.sql.Date;
 
-public class Member {
+import org.springframework.stereotype.Component;
 
+@Component
+public class Member {
+	// view page name 기준으로 작성
 	private String memberId;
 	private String memberPwd;
 	private String memberNm;
@@ -11,12 +14,8 @@ public class Member {
 	
 	
 	
-	public Member(String memberId, String memberPwd, String memberNm, Date memberEnrollDt) {
+	public Member() {
 		super();
-		this.memberId = memberId;
-		this.memberPwd = memberPwd;
-		this.memberNm = memberNm;
-		this.memberEnrollDt = memberEnrollDt;
 	}
 	public String getMemberId() {
 		return memberId;
